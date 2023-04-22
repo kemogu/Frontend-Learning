@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Bu benim dördüncü Js internet sayfam</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      function first () {document.write("Bu çalışan ilk fonksiyondur"+"<br/>");}
+      function second () {document.write("Bu çalışan ikinci fonksiyondur");}
+      function all () {first(); second();}
+      //all();
+      var x=1;
+      function firstLoop (a) {document.write("Bu çalışan ilk fonksiyondur "+a+" defa çalıştı"+"<br/>"); secondLoop(a);}
+      function secondLoop (b) {document.write("Bu çalışan ikinci fonksiyondur "+b+" defa çalıştı"); b=b+1 ;firstLoop(b);}
+      firstLoop(x);
+    </script>
+  </body>
+</html>
