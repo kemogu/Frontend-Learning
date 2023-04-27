@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Bu benim onucuncu Js internet sayfam</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      var courses = new Array ("OOP","Micro","Electronics","Calculus","Chemistry");
+      for (var i = 0; i < courses.length; i++)
+      {
+        document.write(courses[i]+"<br/>");
+      }
+      document.write("<hr/>");
+      var countries = new Array();
+      countries[0] = "Germany";
+      countries[1] = "Turkey";
+      countries[2] = "England";
+      countries[3] = "France";
+      countries[4] = "Poland";
+      for (var i = 0; i < countries.length; i++)
+      {
+        document.write(countries[i]+"<br/>");
+      }
+      document.write("<hr/>");
+      document.write(courses.join());
+      document.write("<hr/>");
+      document.write(countries.join());
+      document.write("<hr/>");
+      document.write((courses.concat(countries)).join());
+      document.write("<hr/>");
+      document.write(((courses.concat(countries)).reverse()).join());
+      document.write("<hr/>");
+      document.write(((courses.concat(countries)).sort()).join());
+      document.write("<hr/>");
+      courses.pop();
+      document.write(courses.join());
+      document.write("<hr/>");
+      courses.push("Physics","Control Systems");
+      document.write(courses.join());
+      document.write("<hr/>");
+    </script>
+  </body>
+</html>

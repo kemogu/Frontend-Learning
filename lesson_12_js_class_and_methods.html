@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Bu benim onikinci Js internet sayfam</title>
+    <script type="text/javascript">
+      function courses (name,id,teacher,date)
+      {
+        this.name = name;
+        this.id = id;
+        this.teacher = teacher;
+        this.date = date;
+        this.howLong = howLong;
+      }
+      function howLong ()
+      {
+        var x = 2023 - this.date;
+        return x;
+      }
+    </script>
+  </head>
+  <body>
+    <script type="text/javascript">
+      var c1 = new courses("OOP",101,"Burak Kaleci",2012);
+      var c2 = new courses("Micro Controller",102,"Salih Fadil",2004);
+      document.write(c1.name + " , " + c1.id + " , " + c1.teacher + " , " + c1.date + " , " + c1.howLong() + "<br/>");
+      document.write(c2.name + " , " + c2.id + " , " + c2.teacher + " , " + c2.date + " , " + c2.howLong() + "<br/>");
+    </script>
+  </body>
+</html>
